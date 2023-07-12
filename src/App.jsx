@@ -26,6 +26,7 @@ const App = () => {
   };
   return (
     <main>
+      <h4 className="title">CSS Color generator</h4>
       <ToastContainer position="top-center" />
       <Form addColor={addColor} name={name} setName={setName} />
       <ColorMap colors={colors} />

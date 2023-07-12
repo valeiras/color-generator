@@ -256,7 +256,8 @@ ul {
 
 .container {
   padding: 2rem;
-  display: grid;
+  display: flex;
+  justify-content: center;
   row-gap: 1.5rem;
   height: 160px;
 }
@@ -290,15 +291,8 @@ input[type='color'] {
   letter-spacing: 3px;
   transition-duration: 0s;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    grid-template-columns: auto 1fr;
-    column-gap: 2rem;
-    align-items: center;
-  }
-  .color-form {
-    height: 40px;
-  }
+.color-form {
+  height: 40px;
 }
 
 .colors {
@@ -339,4 +333,8 @@ input[type='color'] {
 
 .color-list p {
   text-align: center;
+}
+
+.title {
+  margin-top: 2rem;
 }
